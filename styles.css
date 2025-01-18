@@ -1,0 +1,342 @@
+/* General Reset */
+* {
+    font-family: "Lexend Exa", serif;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+h2 {
+    font-weight: light; /* Remove boldness */
+}
+/* Main Content Styles */
+main {
+    padding: 10px;
+    line-height: 1.6;
+    text-align: center;
+    align-items: center;
+    color: #f8f5f1;
+    background-color: #000000;
+    background: linear-gradient(to top, #0c0c0c 75%, #e4dada00 100%);
+    z-index: -1;
+}
+footer {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 2.3px;
+    font-weight: normal;
+    color: #dfdfdf;
+    columns: 3;
+    text-align: center;
+    padding: 40px;
+    z-index: 12;
+    background-color: #360e11;
+}
+.background {
+    background: url('https://i.gyazo.com/0d6b221b662be022b93a328e8c761f2c.gif'); /* Add your GIF URL here */
+    position: absolute; /* Absolute positioning to overlay background */    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    filter: blur(16px); /* Apply blur effect */
+    z-index: -1; /* Ensure it stays behind other content */    
+    transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0; /* Start with invisible */
+    animation: fadeInEffect 7s forwards; /* Animation name and duration */
+}
+@keyframes fadeInEffect {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+    }
+}
+
+/* Header Styles */
+.top-grad {
+    pointer-events: none;
+    position: absolute;     
+    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #202020 0%, #ffffff5b 45%);
+}
+/* Header Styles */
+.bottom-grad {
+    pointer-events: none;
+    position: absolute;   
+    background-attachment:scroll; 
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background: linear-gradient(to top, #080813 0%, #ffffff00 45%);
+}
+.take-me-to { 
+    position: absolute;    
+    top: 0px;
+    left: 0;
+    padding: 0px;
+    z-index: 1000; 
+    transition: all 2.3s ease-in-out;
+}
+.sns-links {
+    margin-left: 40px;
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    list-style: none;
+    text-align: left;
+    display: flex;
+    gap: 15px;
+    padding: 0px 0;
+    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sns-links li a {
+    color: #fff;    
+    letter-spacing: 3.3px;
+    text-decoration: none;
+    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.news {
+    background: rgba(5, 5, 5, 0.356);
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+    display:flex;
+    width: 95%;
+    margin-top: 3.2%;
+    margin-left: 2.5%;
+    height: 50px;
+    border-radius: 6px;
+    z-index:1000;
+    color: #fff;
+    overflow: hidden;
+    top: 2px;
+    position: sticky;
+    transform: translate(0 -15px);
+    }
+.feed {
+    text-wrap: nowrap;
+    list-style: none;
+    z-index:1000;
+    padding: 20px;
+    animation-name: slide;
+    animation-duration: 24s;
+    animation-iteration-count: infinite;
+    transition: all 100ms linear;
+}
+.feed li a {
+    font-size: 1.6rem;
+    margin: 4.3rem;
+    text-decoration:none;
+    color: #ffffff;
+}
+
+@keyframes slide {
+    from {transform: matrix(1, 0, 0, 1, 1700, 5)}
+    to {transform: matrix(1, 0, 0, 1, -2300, 5)}
+  }
+.landing-container{
+    padding: 95px;
+    z-index: 2
+}
+.logo {
+    transform: translateY(00px);
+    font-weight: normal;
+    font-size: 25px;
+    color: #ffffff;
+    text-align: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
+    z-index: 2;
+    transition: all 3.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    opacity: 0;
+    animation: fadeInEffect 3s forwards;    
+}
+.headline {
+    position: relative;
+    transform: translateY(20px);    
+    text-shadow: 5px 4px 12px rgba(0, 0, 0, 1); 
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-align: center;
+    z-index: 3;
+    transition: all 1.3s cubic-bezier(0.0, 0.0, 0.165, 1);
+    opacity: 0;
+    animation: fadeInEffect 4s forwards;   
+}
+
+
+/* Navigation Styles */
+nav {
+    background-color: #f3e6da00;    
+    position: sticky;    
+    top: 0;
+    left: 0;
+    padding: 0px;
+    z-index: 1000;
+    transition: all 2.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.horizontal-links {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    letter-spacing: 3.3px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.horizontal-links li a {
+    font-size: 1.6rem;
+    margin: 4.3rem;
+    text-decoration:none;
+    color: #ffffff;
+}
+
+.horizontal-links li a:hover {
+    color: #ff5733;
+    letter-spacing: 8px;
+    transform: translateY(-5px);  
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+
+
+.current-link {
+    z-index: 3;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 3.3px;
+    transform: translateY(25px);
+    text-align: left;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.current-link::after {
+    content: "↗";
+    font-size: 1.7rem;
+}
+
+.current-link a {
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.7rem;
+    letter-spacing: 8.7px;    
+    color: #000000;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+
+.current-link a:hover {
+    color: #ff5733;    
+    letter-spacing: 15px; 
+    transform: translateY(-5px);
+}
+.portfolio-container {
+    display: grid;
+    transform: translateY(15px);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 12px;
+    padding: 0px;
+}
+
+.portfolio-item {
+    position: relative;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+    z-index: 1000;
+    translate: 0 12px; /* Zoom effect on hover */
+}
+
+.gif-container {
+    width: 100%;
+    height: 445px; /* Fixed height for media */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddd; /* Fallback background if GIF doesn't load */
+    position: relative;
+}
+
+.gif-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.gif-container:hover img {
+    filter: blur(12px);
+    z-index: 1000;
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.card-content {
+    background-color: rgba(26, 26, 26, 0.9); /* Semi-transparent card background */
+    padding: 15px;
+    height: 300px;
+    padding-bottom: 50px;
+    margin-bottom: 25%;
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    top: 62px; /* Pull the card up to overlap the GIF */
+    z-index: 0;
+    transition: transform 0.3s ease;
+}
+
+.card-content:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    
+}
+.scroll-element {
+    pointer-events: none;
+    padding: 20px;
+    background-color: rgba(173, 216, 230, 0);
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    position: fixed;
+    text-decoration: none;
+    top: 0;
+    transition: opacity 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.card-title {
+    letter-spacing: 1.3px;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 0 0 10px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card-description {
+    letter-spacing: 2.7px;
+    font-size: 14px;
+    color: #fff;
+}
+
+

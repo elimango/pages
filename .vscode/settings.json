@@ -1,0 +1,6 @@
+{
+    "files.exclude": {
+        "System Volume Information": true,
+        "CNAME": true
+    }
+}
