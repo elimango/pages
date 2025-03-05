@@ -1,11 +1,11 @@
-const scrollElements = document.querySelectorAll('.scroll-element');
+const scrollables = document.querySelectorAll('.scroll-element');
 
 window.onscroll = function() {
-    scrollElements.forEach(scrollElement => {
+    scrollables.forEach(scrollable => {
     if (window.scrollY > 150) {  
-            scrollElement.style.opacity = 0;
+        scrollable.style.opacity = 0;
         } else {
-            scrollElement.style.opacity = 1;
+        scrollable.style.opacity = 1;
         }
     });
 };

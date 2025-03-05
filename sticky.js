@@ -1,7 +1,8 @@
-window.onscroll = function() {
-    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-        document.querySelector(".element").classList.add("sticky-true");
-      } else {
-        document.querySelector(".element").classList.remove("sticky-true");
-      }
-    };
+document.addEventListener("DOMContentLoaded", () => {
+    const link = document.getElementById('stylesheet');
+    const href = link.getAttribute('href');
+    link.setAttribute('href', ''); // Temporarily remove the CSS
+    setTimeout(() => {
+        link.setAttribute('href', href); // Reapply the original CSS link
+    }, 50); // Slight delay for reloading
+});

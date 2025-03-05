@@ -8,6 +8,22 @@
     align-items: center;
     box-sizing: border-box;
 }
+@keyframes scroll-x {
+    from {transform: matrix(1, 0, 0, 1, 1700, 5)}
+    to {transform: matrix(1, 0, 0, 1, -2300, 5)}
+}
+
+@keyframes generic-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        font-size: 10px;          
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        font-size: 26px;    
+    }
+}
+
 h2 {
     font-weight: light; /* Remove boldness */
 }
@@ -34,7 +50,7 @@ footer {
     background-color: #360e11;
 }
 .background {
-    background: url(''); /* Add your GIF URL here */
+    background: url('https://i.gyazo.com/0d6b221b662be022b93a328e8c761f2c.gif'); /* Add your GIF URL here */
     position: absolute; /* Absolute positioning to overlay background */    
     top: 0;
     left: 0;
@@ -46,17 +62,8 @@ footer {
     z-index: -1; /* Ensure it stays behind other content */    
     transition: all 2.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 0; /* Start with invisible */
-    animation: fadeInEffect 7s forwards; /* Animation name and duration */
+    animation: fade-in 7s forwards; /* Animation name and duration */
 }
-@keyframes fadeInEffect {
-    0% {
-        opacity: 0; /* Fully transparent at the start */
-    }
-    100% {
-        opacity: 1; /* Fully opaque at the end */
-    }
-}
-
 /* Header Styles */
 .top-grad {
     pointer-events: none;
@@ -70,29 +77,29 @@ footer {
     height: 100vh;
     background: linear-gradient(to bottom, #202020 0%, #ffffff5b 45%);
 }
+.scroll-element {
+    position: absolute;
+}
 /* Header Styles */
 .bottom-grad {
     pointer-events: none;
-    position: absolute;   
+    position: fixed;   
     background-attachment:scroll; 
-    background-size: cover;
+    background-size:auto;
     background-position: center;
     top: 0;
     left: 0;
     width: 100%;
     height: 100vh;
-    z-index: 1;
+    z-index: 10;
     background: linear-gradient(to top, #080813 0%, #ffffff00 45%);
 }
-.take-me-to { 
+.sns-links {
     position: absolute;    
     top: 0px;
     left: 0;
     padding: 0px;
     z-index: 1000; 
-    transition: all 2.3s ease-in-out;
-}
-.sns-links {
     margin-left: 40px;
     margin-top: 100px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
@@ -133,10 +140,7 @@ footer {
     list-style: none;
     z-index:1000;
     padding: 20px;
-    animation-name: slide;
-    animation-duration: 24s;
-    animation-iteration-count: infinite;
-    transition: all 100ms linear;
+    animation: scroll-x 24s linear infinite;
 }
 .feed li a {
     font-size: 1.6rem;
@@ -145,78 +149,107 @@ footer {
     color: #ffffff;
 }
 
-@keyframes slide {
-    from {transform: matrix(1, 0, 0, 1, 1700, 5)}
-    to {transform: matrix(1, 0, 0, 1, -2300, 5)}
-  }
 .landing-container{
-    padding: 95px;
+    margin-top: 150px;
+    padding: 30px;
     z-index: 2
 }
+.branding {
+    position: fixed;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.branding img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .logo {
-    transform: translateY(00px);
     font-weight: normal;
-    font-size: 25px;
     color: #ffffff;
     text-align: center;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
     z-index: 2;
-    transition: all 3.3s cubic-bezier(0.075, 0.82, 0.165, 1);
     opacity: 0;
-    animation: fadeInEffect 3s forwards;    
+    transform: translateY(-40px);
+    animation: generic-fade-in 2s forwards;
+}
+@keyframes header-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        font-size: 10px;    
+        transform: translateY(00px);        
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        font-size: 18px;    
+        transform: translateY(-30px);
+    }
 }
 .headline {
     position: relative;
-    transform: translateY(20px);    
     text-shadow: 5px 4px 12px rgba(0, 0, 0, 1); 
     letter-spacing: 2px;
     color: #ffffff;
     text-align: center;
-    z-index: 3;
-    transition: all 1.3s cubic-bezier(0.0, 0.0, 0.165, 1);
-    opacity: 0;
-    animation: fadeInEffect 4s forwards;   
+    z-index: 2;
+    animation: header-fade-in 1.5s forwards;
 }
 
-
-/* Navigation Styles */
-nav {
-    background-color: #f3e6da00;    
-    position: sticky;    
-    top: 0;
-    left: 0;
-    padding: 0px;
-    z-index: 1000;
-    transition: all 2.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+@-webkit-keyframes link-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        margin: 4.3rem;
+        
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        font-size: 20px;    
+        font-size: 1.6rem;
+        margin: 2.7rem;
+    }
 }
 
 .horizontal-links {
+    top: 48px;
+    position: sticky;
+    color: #ffffff;
+    letter-spacing: 13.3px;    
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    letter-spacing: 3.3px;
+    letter-spacing: 5px;
     list-style: none;
     display: flex;
-    text-align: center;
     justify-content: center;
     gap: 15px;
-    padding: 10px 0;
-    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    z-index: 10;
+    transform: translateY(0px);
+}
+@-webkit-keyframes generic-hover {
+    from {
+    }
+    to {
+        color: #ff5733;
+        letter-spacing: 8px;       
+    }
 }
 
 .horizontal-links li a {
-    font-size: 1.6rem;
-    margin: 4.3rem;
     text-decoration:none;
     color: #ffffff;
+    animation: link-fade-in 2s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .horizontal-links li a:hover {
     color: #ff5733;
     letter-spacing: 8px;
-    transform: translateY(-5px);  
-    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
 }
-
-
 .current-link {
     z-index: 3;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); 
@@ -224,7 +257,7 @@ nav {
     transform: translateY(25px);
     text-align: left;
     margin-left: 15px;
-    margin-top: 15px;
+    margin-top: 15px;   
 }
 .current-link::after {
     content: "↗";
@@ -287,7 +320,6 @@ nav {
 
 .gif-container:hover img {
     filter: blur(12px);
-    z-index: 1000;
     transform: scale(1.1); /* Zoom effect on hover */
 }
 
@@ -301,13 +333,14 @@ nav {
     border-radius: 2px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: relative;
-    top: 62px; /* Pull the card up to overlap the GIF */
+    top: 16px; /* Pull the card up to overlap the GIF */
     z-index: 0;
     transition: transform 0.3s ease;
 }
 
 .card-content:hover {
     transform: scale(1.1); /* Zoom effect on hover */
+    z-index: 9;
     
 }
 .scroll-element {
@@ -331,6 +364,7 @@ nav {
     margin: 0 0 10px;
     font-weight: bold;
     color: #fff;
+    z-index: 6;
 }
 
 .card-description {
