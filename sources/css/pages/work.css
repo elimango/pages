@@ -156,12 +156,6 @@ footer {
     padding: 0px 0;
     transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.sns-links li a {
-    position: relative;
-    color: #fff;
-    text-decoration: none;
-    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
 
 .featured-link {
     display:inline-flex;
@@ -169,34 +163,6 @@ footer {
     padding-top: 0px;
     padding-bottom: 32px;
     z-index: 100;
-}
-
-.current-link {
-    z-index: 10;
-    transform: translateY(25px);
-    text-align: center;
-    margin-left: 15px;
-    margin-top: 15px;   
-}
-.current-link::after {
-    content: "↗";
-    font-size: 1.7rem;
-}
-
-.current-link a {
-    color: #ffffff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-decoration: underline;
-    font-size: 1.4rem; 
-    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
-}
-
-.current-link a:hover {
-    color: #ff5733;    
-    letter-spacing: 15px; 
-    transform: translateY(-5px);
 }
 .portfolio-container {
     transition: all 0.3s ease;

@@ -14,7 +14,7 @@ main {
     color: #f8f5f1;
     background-color: #0a0a0a;
     z-index: 1;
-    animation: generic-fade-in 3s forwards; /* Animation name and duration */
+    animation: generic-fade-in 0.6s forwards; /* Animation name and duration */
 }
 
 /* Header Styles */
