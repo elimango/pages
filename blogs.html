@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>articles | elimango </title>
     <meta property="og:title" content="elimango | articles" />
     <meta property="og:description" content="visionary, generalist, director | 2d / 3d delusionist; making 4d animation; project manager at elimango/studio." />
     <meta property="og:image" content="assets/halfwidth.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elimango | Articles</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/sources/css/core.css">
+    <link rel="stylesheet" href="/sources/css/blogs.css">
+    <link rel="stylesheet" href="/sources/css/query/list.css">
+    <link rel="stylesheet" href="/sources/css/query/meta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">    
@@ -16,85 +19,38 @@
         body {
             font-family: 'Mulish', sans-serif;
         }
+        main {
+            margin: 3vh 0vw 60vh 0vw;
+        }
     </style>
 </head>
-<body> 
-    <body data-page="blogs">
-    <nav>
-        <ul class="horizontal-links">
-            <li><a href="/works.html" data-page="works">WORKS</a></li>
-            <li><a href="/blogs.html" data-page="blogs">ARTICLE</a></li>
-            <h1></h1>
-            <li><a href="/about.html" data-page="about">ABOUT</a></li>
-    
-            <li><a href="/contact.html" data-page="contact">CONTACT </a></li>
-        </ul>      
-    </nav>
-    <div class="current-link">
-        <a href="#" id="dynamic-link">⤴</a>
+<body>
+    <div class="scroll-element">
+        <div class="home">
+            <a href="/" target="_self"><img src="/sources/icon/profile.png" alt="home" style="width:40px;height:40px;"></a>
+            <div class="modal">...</div>
+        </div>
+        <div class="link-bar">
+        </div>
     </div>
+    <ul class="horizontal-links">
+        <li><a href="/about.html"><div class="svg"><img src="/sources/icon/svg/alert-circle.svg"></img></div>about</a></li>
+        <li><a href="/works.html"><div class="svg"><img src="/sources/icon/svg/monitor.svg"></img></div>works</a></li>
+        <li><a href="/blogs.html"><div class="svg"><img src="/sources/icon/svg/file.svg"></img></div>articles</a></li>
+    </ul> 
     <main>
         <section>
-            <p>
-                <div class="portfolio-container">
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project1" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/94bcc7526e8beead7e5c4bd091619a02.gif" alt="GIF Button">
-                        </a>
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>
-                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-            
-                    <!-- Portfolio Item 2 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project2" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/bf04359eea8fd4adb34c4f1acbaaf127.gif" alt="GIF Button">
-                        </a>
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-            
-                    <!-- Portfolio Item 3 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project3" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/fe607b38860dbd92dc671099c929740a.gif" alt="GIF Button">
-                        </a>                 
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-                </div>
-            </p>
-            <section>
-                <h2>Find more. ⤴</h2>
-                <p>
-                
-                </p>
-            </section>
+            <div class="meta">
+                <header class="meta-title">Latest Articles</header>
+                <hr class="solid">
+            </div>
         </section>
-    </main>     
-    <footer id="footer">
-        <section>
-            <h2>copyright</h2>
-            <p class="copyright">&copy; elimango | all rights reserved</a>.</p>
-        </section>
-    </footer>  
-    <script src="script.js"></script> 
+        <ul id="page-list"></ul>
+        <script src="/sources/js/jsonQuery.js" scope="files" key="blogs"></script> 
+    </main>
+    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <script src="/sources/js/lightbox.js"></script> 
+    <script src="script.js"></script>
+    <script src="scrollable.js"></script>
 </body>
 </html>

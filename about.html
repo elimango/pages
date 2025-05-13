@@ -1,109 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>about | elimango </title>
+    <meta property="og:title" content="elimango | about" />
+    <meta property="og:description" content="visionary, generalist, director | 2d / 3d delusionist; making 4d animation; project manager at elimango/studio." />
+    <meta property="og:image" content="/sources/icon/profile.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about | elimango; creative delusion</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body> 
-    <body data-page="about">
-    <nav>
-        <ul class="horizontal-links">
-            <li><a href="/works.html" data-page="works">WORKS</a></li>
-            <li><a href="/blogs.html" data-page="blogs">ARTICLE</a></li>
-            <h1></h1>
-            <li><a href="/about.html" data-page="about">ABOUT</a></li>
+    <link rel="stylesheet" href="/sources/css/core.css">
+    <link rel="stylesheet" href="/sources/css/query/list.css">
+    <link rel="stylesheet" href="/sources/css/query/meta.css">
+    <link rel="stylesheet" href="/sources/css/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">    
+    <style>
+        /* Apply the font globally */
+        body {
+            font-family: 'Mulish', sans-serif;
+        }
+        main {
+            margin: 3vh 3vw 30vh 3vw;
+        }
+    </style>
     
-            <li><a href="/contact.html" data-page="contact">CONTACT </a></li>
-        </ul>      
-    </nav>
-    <div class="current-link">
-        <a href="#" id="dynamic-link">⤴</a>
+</head>
+<body>
+    <div class="landing-container">
+        <header class="background">
+            <style>
+                .background {
+                    background: url('/pages/blogs/2023-01-10/media/1.png'); /* Add your GIF URL here */
+                    position: absolute; /* Absolute positioning to overlay background */    
+                    top: 5px;
+                    left: 0px;
+                    width: 100vw;
+                    height: 105vh;
+                    background-size: cover;
+                    background-attachment: fixed; /* Parallax effect */
+                    background-position: center;
+                    filter: blur(16px) brightness(75%); /* Apply blur effect */
+                    z-index: -1; /* Ensure it stays behind other content */
+                    animation: generic-fade-in 2s forwards; /* Animation name and duration */
+                }
+            </style>
+            <header class="top-grad"></header>            
+        </header>
     </div>
+    <div class="scroll-element">
+        <div class="home">
+            <a href="/" target="_self"><img src="/sources/icon/profile.png" alt="home" style="width:40px;height:40px;"></a>
+            <div class="modal">...</div>
+        </div>
+        <div class="link-bar"></div>
+    </div>
+    <ul class="horizontal-links">
+        <li><a href="/about.html"><div class="svg"><img src="/sources/icon/svg/alert-circle.svg"></img></div>about</a></li>
+        <li><a href="/works.html"><div class="svg"><img src="/sources/icon/svg/monitor.svg"></img></div>works</a></li>
+        <li><a href="/blogs.html"><div class="svg"><img src="/sources/icon/svg/file.svg"></img></div>articles</a></li>
+    </ul>
+    <div class="meta">
+        <header class="meta-title">About</header>
+    </div>
+    <hr class="solid">
+    <div class="content">
+        <div class="container">
+            <img src="/sources/icon/about.png">
+            <div class="title">Eli HA.</div>
+            <div class="intro">
+                <p>
+                    2d / 3d generalist, project manager, and director at elimango/studio.       
+                </p>
+                <p>
+                    <strong><b>21 years old; self-taught in art for 10.</strong></b>
+                </p>
+                <p>
+                    <strong><b>at *almost* <i>12 years old</i>, i decided to take up computer animation for a summer hobby- I was committed.</strong></b>
+                </p>
+                <p>
+                    <strong><b>at <i>21</i>, i decided to expend as much of my creative nature as possible.</strong></b>
+                </p>
+            </div> 
+         </div>
+    </div>  
+    <ul class="sns-links">
+        <li><a href="mailto:ehacontact@pm.me"target="_blank"><img src="/sources/icon/svg/mail.svg" alt="Email" style="width:32px;height:32px;"></a></li>
+        <li><a href="https://www.youtube.com/@elimango" target="_blank"><img src="/sources/icon/svg/youtube.svg" alt="Email" style="width:36px;height:36px;"></a></li>
+        <li><a href="https://www.instagram.com/eiimango"target="_blank"><img src="/sources/icon/svg/instagram.svg" alt="Email" style="width:30px;height:30px;"></a></li>
+        <li><a href="https://www.x.com/eiimango" target="_blank"><img src="/sources/icon/x.png" alt="X" style="width:20px;height:20px;"></a></li>               
+
+    </ul>
     <main>
         <section>
-            <p>
-                <div class="portfolio-container">
-                    <!-- Portfolio Item 1 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project1" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/94bcc7526e8beead7e5c4bd091619a02.gif" alt="GIF Button">
-                        </a>
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>
-                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-            
-                    <!-- Portfolio Item 2 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project2" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/bf04359eea8fd4adb34c4f1acbaaf127.gif" alt="GIF Button">
-                        </a>
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-            
-                    <!-- Portfolio Item 3 -->
-                    <div class="portfolio-item">
-                        <a href="https://example.com/project3" target="_self" class="gif-container">
-                            <img src="https://i.gyazo.com/fe607b38860dbd92dc671099c929740a.gif" alt="GIF Button">
-                        </a>                 
-                        <div class="card-content">
-                            <div class="scroll-element">
-                                <h3 class="card-title">Summary</h3>
-                            </div>                            
-                            <h3 class="card-title">Project Title</h3>
-                            <p class="card-description">Description.</p>
-                        </div>
-                    </div>
-                </div>
-            </p>
-            <section>
-                <h2>Find more. ⤴</h2>
-                <p>
-                
-                </p>
-            </section>
+            <ul id="title-list"></ul>
+            <ul id="page-list"></ul>
+            <script src="/sources/js/jsonQuery.js" scope="meta" key='3dcg' iteration="page-list"></script>
         </section>
-    </main>     
-    <footer id="footer">
-        <section>
-            <h2>support</h2>
-            <p></p>
-            <ul class="actions">
-                <li><a href="https://www.patreon.com/c/mangoconception" class="button">Learn More</a></li>
-            </ul>
-        </section>
-        <section>
-            <h2>copyright</h2>
-            <p class="copyright">&copy; elimango | all rights reserved.</a>.</p>
-            <dl class="alt">
-                <dt>Phone</dt>
-                <h2>business</h2>
-                <dd><a href="#">ehacontact@pm.me</a></dd>
-            </dl>
-            <!--
-            <ul class="icons">
-                <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
-                <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-                <li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
-            </ul>
-            -->
-        </section>
-    </footer>    
-    <script src="script.js"></script> 
+        </div>
+        <div id="lightbox" onclick="reset()">
+            <img id="lightbox-img" src="">
+        </div>
+    </main>
+    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <script src="script.js"></script>
+    <script src="scrollable.js"></script>
 </body>
 </html>

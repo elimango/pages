@@ -1,0 +1,208 @@
+/* General Reset */
+* {
+    font-family: "Lexend Exa", serif;
+    font-weight: lighter;
+    letter-spacing: 0px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+@keyframes scroll-z {
+    from {
+      transform: scale(0.6);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1.1); /* Your custom scale */
+      opacity: 1;
+    }
+  }
+@keyframes header-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        font-size: 0px;    
+        transform: translateY(00px);        
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        transform: translateY(-30px);
+    }
+}
+
+@-webkit-keyframes generic-hover {
+    from {
+    }
+    to {
+        color: #ff5733;
+        letter-spacing: 8px;       
+    }
+}
+@-webkit-keyframes link-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        font-size: 0rem;
+        
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+    }
+}
+
+@keyframes scroll-x {
+    from {transform: matrix(1, 0, 0, 1, 2300, 5)}
+    to {transform: matrix(1, 0, 0, 1, -2300, 5)}
+}
+
+@keyframes generic-fade-in {
+    0% {
+        opacity: 0; /* Fully transparent at the start */
+        font-size: 10px;          
+    }
+    100% {
+        opacity: 1; /* Fully opaque at the end */
+        font-size: 26px;    
+    }
+}
+/* Header Styles */
+.top-grad {
+    pointer-events: none;
+    position: absolute;     
+    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 24;
+    background: linear-gradient(to bottom, #111111 0%, #d6d6d636 45%);
+}
+footer {
+    pointer-events: none;
+    list-style: none;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 2.3px;
+    font-weight: lighter;
+    font-size: 0.95rem;
+    display:block;
+    justify-content: center;
+    color: #dfdfdf;
+    text-align: center;
+    padding: 20px;
+    z-index: 3;
+    background-color: #000000;
+}
+.svg {
+    display:inline;
+    position: absolute;
+    transform: translate(-38px, 0px);
+}
+.home {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: fixed;
+    color: #ffffff;
+    top: 0.4vh;
+    left: 0.4vw;
+    padding: 4px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Behind other elements */
+}
+.home img{
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.home img:hover {
+    rotate: 360deg;
+    scale: 1.1;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Behind other elements */
+}
+.modal {
+    transition: all 0.75s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: fixed;
+    color: #ffffff;
+    top: 0vh;
+    font-size: 2rem;
+    left: 4vw;
+    pointer-events: none;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    z-index: 1000; /* Behind other elements */
+}
+
+.horizontal-links {
+    animation: link-fade-in 1s cubic-bezier(0.075, 0.82, 0.165, 1) forwards;
+    top: 16px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    position: sticky;
+    gap: 125px;
+    color: #ffffff;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+.featured-link, 
+.latest-link {
+    font-size: 1.6rem;
+}
+.horizontal-links li a,
+.featured-link li a,
+.latest-link li a {
+    font-weight: 170;
+    z-index: 1000;
+    text-decoration:none;
+    color: #ffffff;
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.horizontal-links li a:hover, 
+.featured-link li a:hover,
+.latest-link li a:hover{
+    color: #ff5733;
+    letter-spacing: 2px;
+}
+.link-bar {  
+    position: fixed;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 6vh;
+    top: 0px;
+    z-index: 9;
+    backdrop-filter: blur(10px);
+}
+hr.solid {
+    display: block;
+    position: relative;
+    top: 3px;
+    border-color: #3a3a3a;
+}
+
+.current-link {
+    z-index: 10;
+    transform: translateY(25px);
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;   
+}
+.current-link::after {
+    content: "↗";
+    font-size: 1.7rem;
+}
+
+.current-link a {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.4rem; 
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+
+.current-link a:hover {
+    color: #ff5733;    
+    letter-spacing: 15px; 
+    transform: translateY(-5px);
+}

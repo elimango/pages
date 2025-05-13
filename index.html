@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title> landing | elimango</title>
     <meta property="og:title" content="elimango | landing" />
-    <meta property="og:description" content="visionary, generalist, director | 2d / 3d delusionist; making 4d animation; project manager at elimango/studio." />
+    <meta property="og:description" content="2d / 3d generalist; 4d delusionist/ project manager at elimango/studio." />
     <meta property="og:image" content="assets/halfwidth.png" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>elimango | Landing</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/sources/css/core.css">
+    <link rel="stylesheet" href="/sources/css/landing.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">    
@@ -16,104 +17,112 @@
         body {
             font-family: 'Mulish', sans-serif;
         }
+        main {
+            margin: 35vh 0 0 0;
+        }
     </style>
 </head>
 <body>
-    <div class="scroll-element">
-        <div class="link-bar"></div>
-    </div>
     <div class="news">
         <ul class="feed">
             <li><a href="/news" data-page="news">Site in progress (undergoing maintenance), certain media, directories and backlinks may not work as expected for a while, as things are being prepared. Please come back later..!</a></li> 
         </ul>
     </div>
+    <div class="scroll-element">
+        <div class="home">
+            <a href="/" target="_self"><img src="/sources/icon/profile.png" alt="home" style="width:40px;height:40px;"></a>
+            <div class="modal">...</div>
+        </div>
+        <div class="link-bar">
+    </div>
+    </div>
     <div class="landing-container">
         <header class="bottom-grad"></header> 
         <header class="background">
+            <style>
+                .background {
+                    background: url('/pages/works/genshin-0/media/3.gif'); /* Add your GIF URL here */
+                    position: absolute; /* Absolute positioning to overlay background */    
+                    top: 5px;
+                    left: 0px;
+                    width: 100vw;
+                    height: 105vh;
+                    background-size: cover;
+                    background-attachment: fixed; /* Parallax effect */
+                    background-position: center;
+                    filter: blur(16px); /* Apply blur effect */
+                    z-index: -1; /* Ensure it stays behind other content */
+                    animation: generic-fade-in 2s forwards; /* Animation name and duration */
+            }
+            </style>            
             <header class="top-grad"></header>
         </header>
-        <ul class="sns-links">
-            <li><a href="https://www.x.com/eiimango" target="_blank"><img src="assets/common/branding/x.png" alt="X" style="width:20px;height:20px;"></a></li>
-            <h1>/</h1>                
-            <li><a href="https://www.youtube.com/@elimango" target="_blank"><img src="assets/common/branding/yt.png" alt="YouTube" style="width:32px;height:32x;"></a></li>
-            <h1>/</h1>
-            <li><a href="https://www.instagram.com/eiimango"target="_blank"><img src="assets/common/branding/ig.png" alt="Instagram" style="width:24px;height:24px;"></a></li>
-        </ul> 
         <header class="logo">
             <h1>elimango</h1>
         </header>
         <header class="headline">
             <h2>2D / 3D generalist; 4D delusionist</h2>
             <h3>visionary of elimango/studio</h3>
-
         </header>
     </div>
     <ul class="horizontal-links">
-        <li><a href="/" data-page="blogs">ARTICLES</a></li>
-        <h1></h1>
-        <li><a href="/" data-page="about">ABOUT</a></li>
-        <li><a href="/" data-page="contact">CONTACT </a></li>
-    </ul>    
+        <li><a href="/about.html"><div class="svg"><img src="/sources/icon/svg/alert-circle.svg"></img></div>about</a></li>
+        <li><a href="/works.html"><div class="svg"><img src="/sources/icon/svg/monitor.svg"></img></div>works</a></li>
+        <li><a href="/blogs.html"><div class="svg"><img src="/sources/icon/svg/file.svg"></img></div>articles</a></li>
+    </ul>
     <main>
         <section>
             <ul class="latest-link">
-                <li><u><a href="/" data-page="works">LATEST POSTS</a></u></li>
+                <li><u><a href="/blogs.html">FEATURED ARTICLES</a></u></li>
             </ul>
             <div class="portfolio-container">
                 <div class="portfolio-item">
-                    <a href="/" target="_self" class="list-latest">
-                        <img src="assets/2.png" alt="Thumbnail">
+                    <a href="/pages/blogs/2025-01-05/hoyocreators.html" target="_self" class="list-latest">
+                        <img src="/pages/blogs/2025-01-05/media/2.png" alt="Thumbnail">
                     </a>
                     <div class="card-content">
-                        <h3 class="card-title">"HoYo Creators" </h3>
+                        <h3 class="card-title">Making "HOYOCREATORS" </h3>
                         <h3 class="card-desc">2025</h3>
                     </div>
                 </div>
                 <div class="portfolio-item">
-                    <a href="/" target="_self" class="list-latest">
-                        <img src="assets/1.gif" alt="Thumbnail">
+                    <a href="/pages/blogs/2023-01-10/valorant-eaj.html" target="_self" class="list-latest">
+                        <img src="/pages/blogs/2023-01-10/media/3.gif" alt="Thumbnail">
                     </a>
                     <div class="card-content">
-                        <h3 class="card-title">"eaJ x VALORANT"</h3>
+                        <h3 class="card-title">Making "eaJ x VALORANT"</h3>
                         <h3 class="card-desc">2023</h3>
                     </div>
                 </div>                
                 <div class="portfolio-item">
-                    <a href="/" target="_self" class="list-latest">
-                        <img src="assets/124.png" alt="Thumbnail">
+                    <a href="/pages/blogs/2023-09-30/making-environments.html" target="_self" class="list-latest">
+                        <img src="/pages/blogs/2023-09-30/media/thumbnail.gif" style="width:110%;height:110%;" alt="Thumbnail">
                     </a>                 
                     <div class="card-content">
-                        <h3 class="card-title">"Writing Technical Systems..."</h3>
+                        <h3 class="card-title">Making 2D environments in 3D</h3>
                         <h3 class="card-desc">2023 </h3>
                     </div>
                 </div>
             </div>
             <ul class="featured-link">
-                <li><u><a href="/" data-page="works">FEATURED WORKS</a></u></li>
+                <li><u><a href="/works.html">FEATURED WORKS</a></u></li>
             </ul>
             <div class="portfolio-item">
-                <a href="https://x.com/eiimango/status/1595214758881497089" target="_blank" class="list-featured">
-                    <img src="assets/blogs/reol-valorant/fe607b38860dbd92dc671099c929740a.gif" alt="Thumbnail">
+                <a href="/pages/works/valorant-reol/valorant-reol.html" target="_self" class="list-featured">
+                    <img src="/pages/works/valorant-reol/media/viewport-2.gif" alt="Thumbnail">
                 </a>
                 <h3 class="card-title">Reol x VALORANT</h3>
                 <h3 class="card-desc">2022</h3>
-            </div>    
+            </div>               
             <div class="portfolio-item">
-                <a href="https://www.youtube.com/watch?v=7G2qV7fgTps" target="_self" class="list-featured">
-                    <img src="assets/47dd49f99be14ad3c122a730db58eedc.gif" alt="Thumbnail">
+                <a href="/pages/works/mc-comm/minecraft-commission.html" target="_self" class="list-featured">
+                    <img src="pages/works/mc-comm/media/thumbnail.gif" alt="Thumbnail">
                 </a>
                 <h3 class="card-title">Minecraft Commission</h3>
                 <h3 class="card-desc">2020</h3>
-            </div>              
+            </div>  
         </section>
     </main>
-    <footer id="footer">
-        <section>
-            <h2>copyright</h2>
-            <p class="copyright">&copy; elimango | all rights reserved</a>.</p>
-        </section>
-    </footer>
-    <script src="script.js"></script>
-    <script src="scrollable.js"></script>
+    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
 </body>
 </html>

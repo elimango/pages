@@ -1,0 +1,282 @@
+/* General Reset */
+
+body {
+    background-color: #0e0e0e;
+}
+/* Main Content Styles */
+main {
+    padding: 0 2.75vw;
+    margin: 66vh 0 3vh 0;
+    line-height: 2.1;
+    text-align: center;
+    align-items: center;
+    color: #f8f5f1;
+    background-color: #111111;
+    z-index: 1;
+    animation: generic-fade-in 1s forwards; /* Animation name and duration */
+}
+h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    padding-top: 24px;
+    padding-left: 8px;
+}
+h2 {
+    font-weight: light; /* Remove boldness */
+}
+.description {
+    font-size: 1.0rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    margin-top: 4px;
+    font-weight: 175;
+    margin-bottom: 24px;
+    padding: 16px;
+    text-align: left;
+    z-index: 100;
+}
+.description a{
+    font-size: 1.0rem;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    margin-top: px;
+    font-weight: 175;
+    margin-bottom: -10px;
+    padding: 16px;
+    text-align: left;
+    z-index: 100;
+}
+.meta {
+    font-size: 0.8rem;
+    color: #ffffffc7;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    font-weight: 175;
+    padding: 16px 12px 0px 0px;
+    text-align: left;
+
+}
+.date {
+    color: #ffffffc7;
+    line-height: 1.6;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    margin-top: 12px;
+    padding: 4px 24px 0px 12px;
+    justify-content: left;
+    text-align: left;
+}
+.tags {
+    padding: 4px 0px 0px 4px;
+    justify-content: left;
+    text-align: left;
+    margin-bottom: 12px;
+}
+.tags li {
+    font-weight: 175;
+    justify-content: left;
+    display: inline-flex;
+    list-style:none;
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    background-color: rgba(255, 255, 255, 0.027);
+    border-radius: 6px;
+}
+
+footer {
+    pointer-events: none;
+    list-style: none;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+    letter-spacing: 2.3px;
+    font-weight: lighter;
+    font-size: 0.95rem;
+    display:block;
+    justify-content: center;
+    color: #dfdfdf;
+    text-align: center;
+    padding: 20px;
+    z-index: 3;
+    background-color: #000000;
+}
+
+.logo {
+    top: 32px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    transform: translateY(-40px);
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); 
+    z-index: 28;
+    opacity: 0;
+    animation: generic-fade-in 2s forwards;
+}
+
+.callout {
+    font-size: 1.2rem;
+    padding: 24px 24px;
+    margin-top: 24px;
+    transform: translateY(-12px);
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.027);
+    border-radius: 6px;
+}
+
+/* Header Styles */
+.top-grad {
+    pointer-events: none;
+    position: absolute;     
+    background-attachment: fixed; /* Parallax effect */
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 24;
+    background: linear-gradient(to bottom, #111111 0%, #d6d6d636 45%);
+}
+
+.sns-links {
+    display: flex;
+    position: absolute;    
+    top: 85.5vh;
+    transform: translate(25%);
+    padding: 0px;
+    z-index: 1000; 
+    margin-top: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+    list-style: none;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 0px 0;
+    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.sns-links li a {
+    position: relative;
+    color: #fff;
+    text-decoration: none;
+    transition: all 5.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.featured-link {
+    display:inline-flex;
+    list-style: none;
+    padding-top: 0px;
+    padding-bottom: 32px;
+    z-index: 100;
+}
+
+.current-link {
+    z-index: 10;
+    transform: translateY(25px);
+    text-align: center;
+    margin-left: 15px;
+    margin-top: 15px;   
+}
+.current-link::after {
+    content: "↗";
+    font-size: 1.7rem;
+}
+
+.current-link a {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-size: 1.4rem; 
+    transition: all 1.5s cubic-bezier(0.075, 0.82, 0.165, 1);  
+}
+
+.current-link a:hover {
+    color: #ff5733;    
+    letter-spacing: 15px; 
+    transform: translateY(-5px);
+}
+.portfolio-container {
+    transition: all 0.3s ease;
+    background-color: #000000;
+    display: grid;
+    z-index: 2;
+    grid-template-columns: repeat(100vw, minmax(500px, 5fr));
+    gap: 8px;
+    padding: 0px;
+}
+
+.portfolio-item {
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    animation: generic-fade-in 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    width: 100%;
+    height: 20vh;
+    background-color: #ddd;
+    position: relative;
+}
+.portfolio-item:nth-child(4) {
+    grid-column: 1 / span 3;
+    height: 50vh;
+}
+.portfolio-item:nth-child(5) {
+    grid-column: 1 / span 2;
+    height: 32vh;
+}
+.portfolio-item:nth-child(6) {
+    height: 32vh;
+}
+.portfolio-item:hover {
+    gap: 10px;
+    z-index: 4;
+    scale: 1.04;
+}
+
+.portfolio-item img {
+    filter: blur(0px);
+    width: 100%;
+    height: 100%;
+    cursor: zoom-in;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
+}
+#lightbox {
+    animation: generic-fade-in 0.5s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+#lightbox img {
+    animation: scroll-z 0.5s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 20px #000;
+    border-radius: 2px;
+}
+
+#lightbox:target {
+    display: flex;
+}
+.list-latest:hover, .list-featured:hover img {
+    filter: blur(4px) brightness(0.5);
+    transition: all 0.3s ease;
+    /* Zoom effect on hover */
+}
+
+.scroll-element {
+    transition: opacity 0.15s linear;
+}
+
+

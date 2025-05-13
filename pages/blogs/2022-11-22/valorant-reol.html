@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>making "valorant x reol" | elimango </title>
+    <meta property="og:title" content="elimango | articles" />
+    <meta property="og:description" content="visionary, generalist, director | 2d / 3d delusionist; making 4d animation; project manager at elimango/studio." />
+    <meta property="og:image" content="/sources/icon/profile.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sources/css/core.css">
+    <link rel="stylesheet" href="/sources/css/pages/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap" rel="stylesheet">    
+    <style>
+        /* Apply the font globally */
+        body {
+            font-family: 'Mulish', sans-serif;
+        }
+        main {
+            padding: 0 2.75vw;
+            margin: 36vh 20vw 3vh 20vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-element">
+        <div class="home">
+            <a href="/" target="_self"><img src="/sources/icon/profile.png" alt="home" style="width:40px;height:40px;"></a>
+            <div class="modal">...</div>
+        </div>
+        <div class="link-bar">
+        </div>
+    </div>
+    <div class="landing-container">
+        <header class="background">
+            <style>
+            .background {
+                    transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1); /* Smooth transition */
+                    background: url('media/viewport-1.png'); /* Add your GIF URL here */
+                    position: absolute; /* Absolute positioning to overlay background */    
+                    width: 100vw;
+                    height: 38vh;
+                    filter: blur(0);
+                    background-size: cover;
+                    background-position: center;
+                    animation: generic-fade-in 3s forwards; /* Animation name and duration */
+                    z-index: 0; /* Ensure it stays behind other content */            
+            }
+            </style>
+            <header class="top-grad"></header>
+        </header>
+    </a>
+    </div>
+    <ul class="horizontal-links">
+        <li><a href="/about.html"><div class="svg"><img src="/sources/icon/svg/alert-circle.svg"></img></div>about</a></li>
+        <li><a href="/works.html"><div class="svg"><img src="/sources/icon/svg/monitor.svg"></img></div>works</a></li>
+        <li><a href="/blogs.html"><div class="svg"><img src="/sources/icon/svg/file.svg"></img></div>articles</a></li>
+    </ul>       
+    <main>
+        <section>
+            <div class="meta">
+                <h1>Making "Valorant x Reol"</h1>
+                <hr class="solid">
+                <p class="date">
+                    2022-11-22, 12:00 UTC+9
+                </p>
+                <ul class="tags">
+                    <li>Animation</li>
+                    <li>2D</li>
+                    <li>3D</li>
+                </ul>
+                <hr class="solid">
+                <div class="callout">
+                    ❕  This article is still in progress. Updates will come as soon as possible.
+                </div> 
+                <hr class="solid">
+            </div>
+            <p class="description">
+                    <div class="portfolio-item">
+                        <img src="media/viewport-1.png" onclick="lb(this.src)" alt="Thumbnail"> 
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="media/viewport-3.gif" onclick="lb(this.src)" alt="Thumbnail">
+                    </div>
+                </ul>               
+            </p>
+        </section>
+        <section>
+            <p class="description">
+            </p>
+            <p class="description">
+            </p>
+            <p class="description">
+            </p>
+        </section>
+        </div>
+        <div id="lightbox" onclick="reset()">
+            <img id="lightbox-img" src="">
+        </div>
+    </main>
+    <iframe src="/footer.html" onload="this.before((this.contentDocument.body||this.contentDocument).children[0]);this.remove()"></iframe>
+    <script>
+        function lb(src) {
+          const lightbox = document.getElementById('lightbox');
+          const lightboxImg = document.getElementById('lightbox-img');
+          lightboxImg.src = src;
+          lightbox.style.display = 'flex';
+        }
+      
+        function reset() {
+          document.getElementById('lightbox').style.display = 'none';
+        }
+      </script>
+    <script src="script.js"></script>
+    <script src="scrollable.js"></script>
+</body>
+</html>
