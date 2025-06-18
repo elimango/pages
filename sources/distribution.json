@@ -8,28 +8,28 @@
                 "title": "Making of 'HOYOCREATORS' 2025",
                 "description": "behind-the-scenes of the fan driven HOYOCREATORS project, entried by elimango.",
                 "sort": "2025-01-05",
-                "tags": ["Behind-The-Scenes"]
+                "tags": ["DevTalk"]
             },
             {
                 "path": "/pages/blogs/2023-01-10/",
                 "title": "Making of 'Valorant x eaJ'",
                 "description": "discussing the technical hurdles behind making the Valorant x eaJ fan animation.",
                 "sort": "2023-03-24",
-                "tags": ["Behind-The-Scenes"]
+                "tags": ["DevTalk"]
             },
             {
                 "path": "/pages/blogs/2023-09-30/",
                 "title": "Making 2D Environments in 3D...",
                 "description": "discussing the technical requirements for stylized look development for 3D scenes.",
                 "sort": "2023-09-30",
-                "tags": ["Research & Development"]
+                "tags": ["Research"]
             },
             {
                 "path": "/pages/blogs/2022-11-22/",
                 "title": "Making of 'Valorant x Reol'",
                 "description": "creating a fan animation in 1 month.  tapping into music audiences.",
                 "sort": "2022-11-22",
-                "tags": ["Behind-The-Scenes"]
+                "tags": ["DevTalk"]
             },
     
             {
@@ -37,7 +37,7 @@
                 "title": "Making the final 'Minecraft Comm...",
                 "description": "moving away from traditional 3D 'PBR' rendering and putting everything on the table.",
                 "sort": "2020-03-24",
-                "tags": ["Behind-The-Scenes"]
+                "tags": ["DevTalk"]
             }
         ]
     },
@@ -85,7 +85,7 @@
                 "title": "Concept Art / Storyboard",
                 "description": "Experience in CSP, SAI for 6+ years in animation layout & production material.",
                 "sort": "PROFICIENT",
-                "tags": ["Pipeline", "Technical"]
+                "tags": ["Pipeline", "Art"]
             }
         ],
         "art": 
