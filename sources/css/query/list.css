@@ -18,9 +18,9 @@ list-sort {
     line-height: 1.0;
     font-size: 1.0rem;
     border-radius: 6px;
-    background-color: rgba(99, 172, 255, 0.568);
+    background-color: rgba(99, 172, 255, 0.568);;
     margin-top: 12px;
-    padding: 4px 12px 6px 10px;
+    padding: 4px 12px 6px 16px;
     justify-content: left;
     text-align: left;
 }

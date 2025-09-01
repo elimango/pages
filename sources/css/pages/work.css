@@ -192,6 +192,7 @@ footer {
     height: 32vh;
 }
 .portfolio-item:nth-child(6) {
+    grid-column: span 1 / 2;
     height: 32vh;
 }
 .portfolio-item:hover {

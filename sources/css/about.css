@@ -38,7 +38,7 @@ h2 {
     z-index: 4; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
     list-style: none;
-    margin: 12px 0vw 4vh -4vw;
+    margin: 12px 0vw 4vh 0vw;
     transform: translateY(-125%);
     text-align: center;
     align-items: center;
@@ -107,7 +107,7 @@ h2 {
     color: #ffffff;
     margin-top: 24px;
     padding-top: 24px;
-    left: 42.5vw;
+    left: 45%;
 }
 .intro {
     display: inline-block;
