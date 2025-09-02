@@ -74,7 +74,7 @@ main {
 }
 
 .landing-container{
-    margin-top: 30vh;
+    margin-top: 32vh;
 }
 .branding {
     position: fixed;
@@ -190,7 +190,7 @@ main {
 }
 
 .list-latest {
-    animation: generic-fade-in 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    animation: generic-fade-in 7s cubic-bezier(0.23, 1, 0.320, 1) forwards;
     width: 100%;
     height: 44vh; /* Fixed height for media */
     overflow: hidden;
@@ -202,7 +202,7 @@ main {
 }
 .list-featured {
     background-color: #000000;
-    animation: generic-fade-in 1s cubic-bezier(0.23, 1, 0.320, 1) forwards;
+    animation: generic-fade-in 7s cubic-bezier(0.23, 1, 0.320, 1) forwards;
     width: 100%;
     height: 50vh; /* Fixed height for media */
     overflow: hidden;
